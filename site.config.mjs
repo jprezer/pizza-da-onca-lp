@@ -65,9 +65,9 @@ export default {
   },
 
   statement: {
-    label: "Feita sem atalhos",
-    text: "Farinha, tempo, fogo e mãos habilidosas. É assim que uma pizza ganha pinta de onça.",
-    accent: "pinta de onça.",
+    label: "O jeito da Onça",
+    text: "Sem atalhos. Só farinha, tempo, paixão e mãos habilidosas.",
+    accent: null,
   },
 
   services: {
