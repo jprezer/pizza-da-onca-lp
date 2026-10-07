@@ -84,6 +84,7 @@ export function resolveTheme(config) {
       ...preset.fonts,
       ...(overrides.displayFont ? { display: overrides.displayFont } : {}),
       ...(overrides.bodyFont ? { body: overrides.bodyFont } : {}),
+      ...(overrides.fontGoogle ? { google: overrides.fontGoogle } : {}),
     },
   };
 }

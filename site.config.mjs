@@ -2,145 +2,162 @@ export default {
   preset: "warm",
 
   brand: {
-    name: "Casa Brasa",
-    shortName: "CB",
-    tagline: "Fogo, tempo e mesa cheia.",
-    logo: "/assets/casa-brasa-logo.svg",
-    logoAlt: "Casa Brasa",
+    name: "Pizza da Onça",
+    shortName: "PO",
+    tagline: "Massa, fogo e noite boa em Araucária.",
+    logo: null,
+    logoAlt: "Pizza da Onça",
+    wordmarkLines: ["Pizza", "da Onça"],
   },
 
   seo: {
-    title: "Casa Brasa | Cozinha de fogo em Curitiba",
+    title: "Pizza da Onça | Pizzaria napolitana em Araucária",
     description:
-      "Cozinha de fogo, ingredientes locais e uma mesa feita para ficar. Conheça a Casa Brasa, no Batel, em Curitiba.",
+      "Pizza napolitana em Araucária: forno a lenha, fermentação natural e ingredientes selecionados. Peça online na Pizza da Onça.",
     keywords: [
-      "restaurante em Curitiba",
-      "cozinha de fogo",
-      "restaurante no Batel",
-      "Casa Brasa",
+      "pizza napolitana em Araucária",
+      "pizzaria em Araucária",
+      "pizza de fermentação natural",
+      "pizza no forno a lenha",
+      "Pizza da Onça",
     ],
-    canonical: "https://casabrasa.example/",
+    canonical: "https://pizza-da-onca.vercel.app/",
     locale: "pt_BR",
     schemaType: "Restaurant",
   },
 
   announcement: {
-    label: "Batel · Curitiba",
-    actionLabel: "Reservas para esta noite",
+    label: "Araucária · Pizzaria napolitana",
+    actionLabel: "Ver cardápio e pedir",
   },
 
   contact: {
-    primaryLabel: "Reservar uma mesa",
-    footerPrimaryLabel: "Reservas",
-    primaryUrl: "#visite",
-    phone: "+55 41 99999-0000",
-    instagramLabel: "Conheça a casa",
+    primaryLabel: "Pedir pelo cardápio",
+    footerPrimaryLabel: "Fazer pedido",
+    primaryUrl: "https://app.cardapioweb.com/pizza_daonca",
+    phone: "+55 41 99705-7094",
+    instagramLabel: "Ver Instagram",
     socialLabel: "Instagram",
-    instagramUrl: "https://www.instagram.com/",
+    instagramUrl: "https://www.instagram.com/apizzadaonca/",
     mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Batel%2C+Curitiba%2C+PR",
+      "https://www.google.com/maps/place/Pizza+da+On%C3%A7a/@-25.5924494,-49.3958425,17z/data=!3m1!4b1!4m6!3m5!1s0x94dd03602b951dfd:0xc5ba2af3a9f4457e!8m2!3d-25.5924494!4d-49.3958425!16s%2Fg%2F11xf121vhb",
   },
 
   navigation: [
-    { label: "Experiência", href: "#servicos" },
-    { label: "À mesa", href: "#avaliacoes" },
-    { label: "Visite", href: "#visite" },
+    { label: "A pizza", href: "#servicos" },
+    { label: "Avaliações", href: "#avaliacoes" },
+    { label: "Como chegar", href: "#visite" },
   ],
 
   hero: {
-    kicker: "Cozinha de fogo em Curitiba",
-    title: ["Fogo lento.", "Mesa", "cheia."],
+    kicker: "1ª pizzaria napolitana de Araucária",
+    title: ["Do forno.", "Para", "a noite."],
     accentLine: 1,
     description:
-      "Ingredientes locais, brasa acesa e pratos feitos para atravessar a noite sem pressa.",
-    image: "/assets/casa-brasa-hero.jpg",
-    imageAlt: "Chef finalizando um prato entre as chamas da cozinha",
-    imagePosition: "58% center",
-    proofLabel: "Cozinha aberta",
-    proofValue: "Terça a domingo",
-    scrollLabel: "Descubra a casa",
+      "Fermentação natural, ingredientes honestos e o tempo certo de forno. A Pizza da Onça foi feita para transformar uma noite comum em encontro.",
+    image:
+      "https://storage.googleapis.com/prod-cardapio-web/uploads/company/image/24661/284aefc7img8709jpg_9zt0z9.jpg",
+    imageAlt: "Ambiente da Pizza da Onça, pizzaria napolitana em Araucária",
+    imagePosition: "60% center",
+    proofLabel: "Forno a lenha",
+    proofValue: "Fermentação natural",
+    scrollLabel: "Conheça a pizza",
   },
 
   statement: {
-    label: "Nossa mesa",
-    text: "A chama muda o ingrediente. O tempo transforma a refeição em encontro.",
-    accent: "encontro.",
+    label: "Feita sem atalhos",
+    text: "Farinha, tempo, fogo e mãos habilidosas. É assim que uma pizza ganha pinta de onça.",
+    accent: "pinta de onça.",
   },
 
   services: {
-    title: "Da brasa para a mesa.",
+    title: "A pizza pede tempo.",
     description:
-      "Uma cozinha direta, guiada pela estação e feita para dividir. Cada serviço tem o ritmo da chama e o cuidado de quem recebe.",
+      "Da massa ao forno, cada escolha respeita a tradição napolitana sem perder o jeito da casa. Escolha a sua e peça direto pelo cardápio online.",
     items: [
       {
-        title: "Menu de fogo",
+        title: "Massa de longa fermentação",
         description:
-          "Carnes, vegetais e acompanhamentos preparados na brasa e servidos no centro da mesa.",
-        detail: "Ingredientes locais · Safra do dia",
+          "Leve, aerada e preparada com calma para chegar à mesa com textura, sabor e digestibilidade.",
+        detail: "Farinha · Água · Tempo",
       },
       {
-        title: "Bar da casa",
+        title: "Forno a lenha",
         description:
-          "Drinks autorais, vinhos de pequenos produtores e sugestões para acompanhar cada prato.",
-        detail: "Coquetéis · Vinhos · Sem álcool",
+          "Calor intenso, borda marcada e aquele ponto que só o fogo vivo consegue entregar.",
+        detail: "Assada em 60 a 90 segundos",
       },
       {
-        title: "Mesa compartilhada",
+        title: "Sabores para dividir",
         description:
-          "Um salão acolhedor para jantares, encontros e celebrações sem cerimônia.",
-        detail: "Reservas · Grupos · Eventos",
+          "Das clássicas Margherita e Pepperoni às receitas da casa, com opções para um encontro ou mesa cheia.",
+        detail: "Combos · Salgadas · Doces",
       },
     ],
   },
 
-  // Para exibir uma galeria, adicione `gallery` seguindo o exemplo do README.
+  gallery: {
+    label: "Da casa para a mesa",
+    title: "Pizza boa não precisa de atalho.",
+    items: [
+      {
+        image:
+          "https://storage.googleapis.com/prod-cardapio-web/uploads/item/image/3799388/eb61b838IMG_1556.PNG",
+        alt: "Pizzas napolitanas da Pizza da Onça",
+        caption: "Combos para compartilhar",
+      },
+      {
+        image:
+          "https://storage.googleapis.com/prod-cardapio-web/uploads/item/image/3799402/933ff37c161b6ea8-7467-4083-bd4f-1731ad2bb3c0.jpg",
+        alt: "Pizza artesanal da Pizza da Onça",
+        caption: "Ingredientes que falam por si",
+      },
+    ],
+  },
 
   reviews: {
-    label: "Avaliações de demonstração",
-    title: "Uma noite para ficar na memória.",
-    rating: "4,9",
-    total: "Conteúdo fictício para personalização",
-    sourceLabel: "Ver localização no Google Maps",
+    label: "Avaliações no Google",
+    title: "Uma das favoritas de Araucária.",
+    rating: "4,8",
+    total: "149 avaliações no Google",
+    sourceLabel: "Ver avaliações no Google Maps",
     items: [
       {
         quote:
-          "A comida chega no centro da mesa e muda o ritmo da noite. Tudo tem sabor de cuidado.",
-        author: "Cliente de exemplo",
-        score: "5/5",
+          "Ambiente maravilhoso e a pizza uma delícia! Vale a pena conhecer e sentir a explosão de sabor. Recomendo demais.",
+        author: "Sabrina Diehl",
+        score: "5/5 · Google",
       },
       {
         quote:
-          "Ambiente bonito sem ser formal, serviço atento e uma seleção de vinhos muito bem pensada.",
-        author: "Cliente de exemplo",
-        score: "5/5",
-      },
-      {
-        quote:
-          "Voltaria só pelo pão na brasa, mas o jantar inteiro foi excelente.",
-        author: "Cliente de exemplo",
-        score: "5/5",
+          "Pizzas de fermentação natural e ingredientes frescos — e entregam isso mesmo. Massa fina e bem assada.",
+        author: "Felipe Santos",
+        score: "4/5 · Google",
       },
     ],
   },
 
   location: {
-    label: "Venha para a mesa",
-    title: "No coração do Batel.",
+    label: "Venha comer com a gente",
+    title: "No centro de Araucária.",
     description:
-      "A Casa Brasa é uma marca fictícia criada para demonstrar o white label. Substitua todos os dados antes de publicar.",
-    actionLabel: "Abrir região no Google Maps",
-    addressLines: ["Rua de Exemplo, 120", "Batel · Curitiba — PR"],
+      "Para pedir em casa, retirar ou sentar à mesa. A Pizza da Onça fica na Av. Archelau de Almeida Tôrres, no coração da cidade.",
+    actionLabel: "Traçar rota no Google Maps",
+    addressLines: [
+      "Av. Archelau de Almeida Tôrres, 698",
+      "Centro · Araucária — PR · 83702-185",
+    ],
     address: {
-      street: "Rua de Exemplo, 120",
-      city: "Curitiba",
+      street: "Av. Archelau de Almeida Tôrres, 698",
+      city: "Araucária",
       region: "PR",
-      postalCode: "80000-000",
+      postalCode: "83702-185",
       country: "BR",
     },
     hours: [
       "Terça a quinta · 18h às 23h",
-      "Sexta e sábado · 18h à 00h",
-      "Domingo · 12h às 17h",
+      "Sexta e sábado · 18h às 23h30",
+      "Domingo e segunda · 18h às 23h",
     ],
     openingHours: [
       {
@@ -148,22 +165,21 @@ export default {
         opens: "18:00",
         closes: "23:00",
       },
-      {
-        days: ["Friday", "Saturday"],
-        opens: "18:00",
-        closes: "00:00",
-      },
-      { days: ["Sunday"], opens: "12:00", closes: "17:00" },
+      { days: ["Friday", "Saturday"], opens: "18:00", closes: "23:30" },
+      { days: ["Sunday", "Monday"], opens: "18:00", closes: "23:00" },
     ],
     mapEmbedUrl:
-      "https://www.google.com/maps?q=Batel,+Curitiba,+PR&output=embed",
+      "https://www.google.com/maps?q=Pizza+da+On%C3%A7a,+Av.+Archelau+de+Almeida+T%C3%B4rres,+698,+Arauc%C3%A1ria+-+PR&output=embed",
   },
 
   theme: {
-    accent: "oklch(70% 0.17 245)",
-    ink: "oklch(18% 0.025 30)",
-    paper: "oklch(97% 0.004 30)",
-    displayFont: null,
-    bodyFont: null,
+    accent: "oklch(77% 0.16 82)",
+    accentStrong: "oklch(83% 0.17 82)",
+    ink: "oklch(14% 0.018 70)",
+    paper: "oklch(96% 0.02 85)",
+    displayFont: "'DM Serif Display', Georgia, serif",
+    bodyFont: "'Manrope', Arial, sans-serif",
+    fontGoogle:
+      "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap",
   },
 };

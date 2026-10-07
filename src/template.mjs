@@ -40,6 +40,17 @@ const renderTitleLines = (lines, accentLine) =>
     )
     .join("");
 
+const renderBrandMark = (brand, decorative = false) => {
+  if (brand.logo) {
+    return `<img src="${safeUrl(brand.logo)}" alt="${decorative ? "" : escapeHtml(brand.logoAlt)}" width="310" height="164"${decorative ? ' loading="lazy"' : ""} />`;
+  }
+
+  const lines = brand.wordmarkLines?.length ? brand.wordmarkLines : [brand.name];
+  return `<span class="brand-wordmark" aria-hidden="true">${lines
+    .map((line) => `<span>${escapeHtml(line)}</span>`)
+    .join("")}</span>`;
+};
+
 const highlightPhrase = (text, phrase) => {
   if (!phrase || !text.includes(phrase)) return escapeHtml(text);
   const [before, after] = text.split(phrase);
@@ -187,7 +198,7 @@ export function renderPage(config) {
 
     <header class="site-header" data-header>
       <a class="brand-lockup" href="#inicio" aria-label="${escapeHtml(config.brand.name)}, início">
-        <img src="${safeUrl(config.brand.logo)}" alt="${escapeHtml(config.brand.logoAlt)}" width="310" height="164" />
+        ${renderBrandMark(config.brand)}
       </a>
       <nav class="desktop-nav" aria-label="Navegação principal">
         ${config.navigation
@@ -299,7 +310,7 @@ ${config.gallery?.items?.length ? `
 
     <footer class="site-footer section-shell">
       <a class="brand-lockup footer-brand" href="#inicio" aria-label="Voltar ao início">
-        <img src="${safeUrl(config.brand.logo)}" alt="" width="310" height="164" loading="lazy" />
+        ${renderBrandMark(config.brand, true)}
       </a>
       <p>${escapeHtml(config.brand.tagline)}</p>
       <div>
