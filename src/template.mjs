@@ -197,7 +197,7 @@ export function renderPage(config) {
     </div>
 
     <header class="site-header" data-header>
-      <a class="brand-lockup" href="#inicio" aria-label="${escapeHtml(config.brand.name)}, início">
+      <a class="brand-lockup${config.brand.logo ? " has-logo" : ""}" href="#inicio" aria-label="${escapeHtml(config.brand.name)}, início">
         ${renderBrandMark(config.brand)}
       </a>
       <nav class="desktop-nav" aria-label="Navegação principal">
@@ -309,7 +309,7 @@ ${config.gallery?.items?.length ? `
     </main>
 
     <footer class="site-footer section-shell">
-      <a class="brand-lockup footer-brand" href="#inicio" aria-label="Voltar ao início">
+      <a class="brand-lockup footer-brand${config.brand.logo ? " has-logo" : ""}" href="#inicio" aria-label="Voltar ao início">
         ${renderBrandMark(config.brand, true)}
       </a>
       <p>${escapeHtml(config.brand.tagline)}</p>

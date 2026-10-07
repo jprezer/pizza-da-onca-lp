@@ -5,7 +5,7 @@ export default {
     name: "Pizza da Onça",
     shortName: "PO",
     tagline: "Massa, fogo e noite boa em Araucária.",
-    logo: null,
+    logo: "/assets/pizza-da-onca-logo.png",
     logoAlt: "Pizza da Onça",
     wordmarkLines: ["Pizza", "da Onça"],
   },

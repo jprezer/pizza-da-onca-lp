@@ -145,6 +145,14 @@ button {
   object-position: left center;
 }
 
+.brand-lockup.has-logo {
+  width: 4.85rem;
+}
+
+.brand-lockup.has-logo img {
+  object-position: center;
+}
+
 .brand-wordmark {
   display: grid;
   align-content: center;
@@ -859,6 +867,11 @@ button {
   width: 7rem;
 }
 
+.footer-brand.has-logo {
+  width: 5.75rem;
+  height: 5.75rem;
+}
+
 .site-footer p {
   margin: 0;
 }
@@ -1029,6 +1042,10 @@ button {
   .brand-lockup {
     width: 6.8rem;
     height: 3.75rem;
+  }
+
+  .brand-lockup.has-logo {
+    width: 3.75rem;
   }
 
   .header-cta {
