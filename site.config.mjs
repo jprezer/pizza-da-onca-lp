@@ -21,7 +21,7 @@ export default {
       "pizza no forno a lenha",
       "Pizza da Onça",
     ],
-    canonical: "https://pizza-da-onca.vercel.app/",
+    canonical: "https://pizza-da-onca-one.vercel.app/",
     locale: "pt_BR",
     schemaType: "Restaurant",
   },

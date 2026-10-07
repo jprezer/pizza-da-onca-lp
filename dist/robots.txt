@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pizza-da-onca.vercel.app/sitemap.xml
+Sitemap: https://pizza-da-onca-one.vercel.app/sitemap.xml
