@@ -259,7 +259,7 @@ ${config.gallery?.items?.length ? `
           <p class="section-label">${escapeHtml(config.gallery.label)}</p>
           <h2>${escapeHtml(config.gallery.title)}</h2>
         </div>
-        <div class="gallery-grid">${renderGallery(config.gallery.items)}</div>
+        <div class="gallery-grid gallery-count-${config.gallery.items.length}">${renderGallery(config.gallery.items)}</div>
       </section>` : ""}
 
       <section class="reviews section-shell" id="avaliacoes">

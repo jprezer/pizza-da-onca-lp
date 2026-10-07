@@ -575,6 +575,10 @@ button {
   gap: clamp(0.75rem, 1.8vw, 1.5rem);
 }
 
+.gallery-grid.gallery-count-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .gallery-item {
   margin: 0;
   position: relative;
@@ -1125,6 +1129,10 @@ button {
 
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-grid.gallery-count-2 {
+    grid-template-columns: 1fr;
   }
 
   .gallery-item:first-child {
